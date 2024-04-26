@@ -9,7 +9,7 @@ async def say_hello(chat_id):
 
 
 if __name__ == "__main__":
-    token = '6441274875:AAFVanHERYQwzMW51zYWJWpKlEV7n1wyOyw'
+    token = ''
     bot = Bot(token)
     bot.add_handler(CommandHandler(callback='hello'))
     bot.add_handler(MessageHandler(action=say_hello, callback='hello'))
